@@ -1,0 +1,426 @@
+/* General Styles */
+.home-page {
+  font-family: "Marcellus", Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 4.6rem;
+  width: 100%;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: black;
+}
+
+.hero-text h2 {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  color: #a6a6a6;
+  font-weight: lighter;
+}
+
+/* Featured Products Section */
+.featured-products h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-weight: lighter;
+}
+
+.product-image {
+  width: 100%;
+  height: 60%;
+}
+
+/* Buttons */
+
+.shop-now-btn {
+  --color: #333; 
+  font-family: inherit;
+  display: inline-block;
+  width: 12em; 
+  height: 3.5em; 
+  line-height: 3.5em; 
+  margin: 20px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color); 
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 18px; 
+  font-weight: 500;
+  color: var(--color); 
+  background-color: transparent; 
+  border-radius: 0;
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+.shop-now-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 200px; 
+  width: 250px;
+  border-radius: 50%;
+}
+
+.shop-now-btn:hover {
+  color: #fff; 
+}
+
+.shop-now-btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.shop-now-btn:hover:before {
+  top: -50px;
+  left: -50px; 
+}
+
+.shop-now-btn:active:before {
+  background: #222; 
+  transition: background 0s;
+}
+
+/* Categories Section */
+.product-categories {
+  margin-top: 5rem;
+  padding: 5rem;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.product-categories h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 30rem;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px #00000033;
+}
+
+.category-card h4,
+.category-card a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+  text-decoration: none;
+}
+.category-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Collection Section */
+.collection {
+  margin: 5rem 4rem;
+  width: 90%;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.collection img {
+  width: 40%;
+  height: 100%;
+  background-color: #000000;
+}
+
+.collection-text {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.collection h3 {
+  font-size: 3.5rem;
+  font-weight: lighter;
+}
+
+.collection p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #a6a6a6;
+  font-weight: lighter;
+  text-align: start;
+}
+
+
+
+/* Feedback Section */
+.feed-back {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #f8f8f8;
+  text-align: center;
+
+}
+.feedback-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22%, 1fr));
+  gap: 1rem;
+}
+.feed-back h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.feed-back p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.feedback-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.feedback-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+}
+
+.feedback-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Brands Section */
+.brands {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.brands h3 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.brand-logos img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.brand-logos img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+footer div {
+  background-color:#0c0c0c;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer section {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+footer h4 {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+footer {
+  background-color: #0c0c0c; 
+  color: #fff; 
+}
+
+.copyrights {
+  background-color: #0c0c0c; 
+  color: #fff; 
+  text-align: center;
+  padding: 10px; 
+  font-size: 0.9em;
+  
+}
+
+.cp {
+  color: grey;
+  cursor: pointer;
+}
+
+/* Responsiveness */
+
+
+@media (max-width: 1024px) {
+  .hero-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .category-card {
+    width: 45%;
+  }
+
+  .collection {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .collection img,
+  .collection-text {
+    width: 80%;
+  }
+
+  .feedback-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .category-card {
+    width: 100%;
+  }
+
+  .collection h3 {
+    font-size: 2.5rem;
+  }
+
+  .collection p {
+    font-size: 1rem;
+  }
+
+  .feedback-card {
+    width: 100%;
+  }
+
+  .brand-logos img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .collection h3 {
+    font-size: 2rem;
+  }
+
+  .collection p {
+    font-size: 0.9rem;
+  }
+
+  .brand-logos img {
+    width: 80px;
+  }
+}
+
+
+
+
+
+
+    
