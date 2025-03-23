@@ -29,6 +29,7 @@
   font-size: 2rem;
   font-weight: lighter;
   text-align: center;
+  margin-top: 8rem;
 }
 
 .product-grid {
@@ -333,6 +334,8 @@ footer {
   color: grey;
   cursor: pointer;
 }
+
+
 
 /* Responsiveness */
 

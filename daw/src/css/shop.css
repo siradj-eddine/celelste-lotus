@@ -161,6 +161,8 @@
 
 @media (max-width: 480px) {
   .product-list {
+    display: grid;
+    place-items: center;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -173,12 +175,12 @@
   }
 
   .product {
-    width: 100%;
+    width: 80%;
     height: auto;
   }
 
   .product img {
-    height: 12rem;
+    height: 10rem;
   }
 
   .product h3 {
