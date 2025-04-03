@@ -1,0 +1,210 @@
+/* Background Styles */
+.background {
+    margin: 0;
+    margin-top: -100px;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f9f9f9;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  /* Login and Sign-Up Container */
+  .login-container, .signup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  /* Card Styles */
+  .login-card, .signup-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.7s ease-in-out;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  /* Title and Subtitle */
+  .login-title, .signup-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-subtitle, .signup-subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Styles */
+  .login-form, .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .input-group {
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  .input-group input:focus {
+    border-color: #000;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Password Wrapper */
+  .password-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .password-wrapper input {
+    width: calc(100% - 50px); /* Leave space for button */
+  }
+  
+  .toggle-password-btn {
+    position: absolute;
+    right: 5px;
+    background: transparent;
+    border: none;
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .toggle-password-btn:hover {
+    color: #000;
+  }
+  
+  /* Buttons */
+  .login-btn, .signup-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #000;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+  }
+  
+  .login-btn:hover, .signup-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  }
+  
+  .login-btn:active, .signup-btn:active {
+    background-color: #222;
+    transform: translateY(0);
+  }
+  
+  /* Footer Links */
+  .login-footer, .signup-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+.toggle-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.3s ease;
+    z-index: 1; 
+}
+
+.toggle-password-btn:hover {
+    color: #000;
+}
+  .login-footer a, .signup-footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .login-footer a:hover, .signup-footer a:hover {
+    color: #333;
+  }
+  
+  /* Animations */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-card, .signup-card {
+      padding: 2rem 1.5rem;
+    }
+  
+    .login-title, .signup-title {
+      font-size: 1.5rem;
+    }
+  
+    .login-subtitle, .signup-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    .input-group label {
+      font-size: 0.8rem;
+    }
+  
+    .input-group input {
+      font-size: 0.9rem;
+    }
+  
+    .login-btn, .signup-btn {
+      font-size: 0.9rem;
+    }
+  
+    .login-footer, .signup-footer {
+      font-size: 0.8rem;
+    }
+  }
