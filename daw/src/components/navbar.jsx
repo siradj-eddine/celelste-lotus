@@ -24,7 +24,7 @@ const {cart} = useCart();
 
 
       <ul className={`navbar-links ${isOpen ? 'active' : ''}`}>
-        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+        <li><Link to="/home" onClick={toggleMenu}>Home</Link></li>
         <li><Link to="/about-us" onClick={toggleMenu}>About</Link></li>
         <li><Link to="/shop" onClick={toggleMenu}><ShopCategories /></Link></li>
         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
@@ -41,8 +41,8 @@ const {cart} = useCart();
             </Link>
           </li>
           {/* <li><Link to="" onClick={toggleMenu}><span className='search-icon'><FaSearch /></span></Link></li> */}
-          <li><Link to="" onClick={toggleMenu}><span className='login-icon'><FaUser /></span></Link></li>
-          <li><Link to="/login" onClick={toggleMenu}><span className='login-icon'><FaSignInAlt /></span></Link></li>
+          <li><Link to="/signup" onClick={toggleMenu}><span className='login-icon'><FaUser /></span></Link></li>
+          {/* <li><Link to="" onClick={toggleMenu}><span className='login-icon'><FaSignInAlt /></span></Link></li> */}
         </div>
       </ul>
     </nav>
