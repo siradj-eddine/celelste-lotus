@@ -14,6 +14,30 @@ const LoginPage = () => {
 
 
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     const response = await fetch('/login', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify({ email, password }),
+  //     });
+
+  //     const data = await response.json();
+  //     if (response.ok) {
+  //       alert(data.message);
+  //       navigate('/home'); // Navigate to the home page
+  //     } else {
+  //       alert(data.message);
+  //     }
+  //   } catch (error) {
+  //     console.error('Error logging in:', error);
+  //     alert('Failed to connect to the server.');
+  //   }
+  // };
+
 
 
 
@@ -62,7 +86,7 @@ const LoginPage = () => {
             </button>
           </form>
           <p className="login-footer">
-            Don't have an account? <a href="/signup">Sign Up</a>
+            Don't have an account? <Link to='/signup'><a href="/signup">Sign Up</a></Link>
           </p>
         </div>
       </div>
