@@ -13,7 +13,28 @@ const SignUpPage = () => {
 
 
 
-
+// const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     try {
+//       const response = await fetch('http://127.0.0.1:5000/signup', {
+//         method: 'POST',
+//         headers: {
+//           'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({ name, email, password }),
+//       });
+  
+//       const data = await response.json();
+//       if (response.ok) {
+//         alert(data.message); // Show success message
+//       } else {
+//         alert('Failed to create account.');
+//       }
+//     } catch (error) {
+//       console.error('Error signing up:', error);
+//       alert('Failed to connect to the server.');
+//     }
+//   };
 
   
 
@@ -73,7 +94,7 @@ const SignUpPage = () => {
             </button>
           </form>
           <p className="signup-footer">
-            Already have an account? <a href="/login">Login</a>
+            Already have an account? <Link to='/login'><a href="/login">Login</a></Link>
           </p>
         </div>
       </div>
